@@ -1,0 +1,49 @@
+ body{
+	 margin:0px;
+	 padding:0px;
+	 background: rgb(0,0,0);
+	 background: linear-gradient(0deg, rgb(0, 0, 0) 3%, rgb(34, 193, 195) 100%);
+ }
+
+ .one {
+	padding:30px;
+ }
+ 
+ img {
+	width:300px; 
+	height:300px;
+	border-bottom-right-radius: 30%;
+	border-top-left-radius: 30%;
+ }
+ 
+ .three {
+	color: #ffffff;
+	 
+ }
+ 
+ h1{
+	 color:#FFF;
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:30px;
+	 font-weight:lighter;
+ }
+ 
+ h2 {
+	 font-family:Arial, Helvetica, sans-serif;
+	 color:#FFF;
+	 font-weight:lighter;
+ }
+ 
+ 
+ .para1 {
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:20px;
+ }
+ 
+ .para2 {
+	 color:#999;
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:17px;
+	 padding:20px;
+	 text-align:center;"
+ }

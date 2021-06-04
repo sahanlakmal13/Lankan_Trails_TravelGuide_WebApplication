@@ -1,0 +1,100 @@
+.topnav {
+	overflow: hidden;
+	background-color: black;
+	position: sticky;
+	top: 0;
+	z-index: 999999;
+}
+  
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 18px 20px;
+	text-decoration: none;
+	font-size: 20px;
+}
+  
+  
+.topnav a:hover {
+	background-color:  gray;
+	color: white;
+}
+  
+.topnav a.active {
+	margin-right:80px;
+	background-color: rgba(255, 0, 119, 0.808);
+	color: white;
+	font-weight: 700;
+	font-family: Papyrus;
+	font-size:15px;
+}
+
+footer {
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	background-color: black;	
+	line-height: 2.5rem;
+	padding: 15px;
+	bottom: -200px;
+	width: 97.91%;
+	position: absolute;
+}
+
+.footer_p {
+	color: #c4c4c4;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0 35px;
+}
+
+.footer_des {
+	font-weight: 300;
+	color: #ffffff;
+	padding-left: 2px;
+	letter-spacing: 0.1rem;
+
+}
+
+.footer_sep {
+	font-weight: 300;
+	color: #dfdfdf;
+	margin: 0 5px;
+}
+
+.footer_sep--large {
+    color: rgb(0, 68, 123);
+	font-size: 38px;
+}
+
+#logoFooter{
+	padding:18px 20px;
+	background-color: rgba(255, 0, 119, 0.808);
+	color: white;
+	font-weight: 700;
+	font-family: Papyrus;
+	font-size:15px;
+}
+
+.email::before {
+	background-image: url('../img/icon/email.png');
+    background-size: contain;
+    display: inline-block; 
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: -20%;
+    content:"";
+}
+
+.dev::before {
+	background-image: url('../img/icon/dev.png');
+    background-size: contain;
+    display: inline-block; 
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: -20%;
+    content:"";
+}

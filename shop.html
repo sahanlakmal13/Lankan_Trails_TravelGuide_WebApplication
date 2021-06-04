@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<link rel="icon" href="logo/favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/common-layout-shop.css">
+
+    <link rel="stylesheet" type="text/css" href="css/shop-css.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shop</title>
+
+</head>
+
+<body>
+
+    <script src = "javascript/shopScript.js"></script>
+
+    <div class = "topnav">
+
+        <a class = "active" href="homepage.html" >Lankan Trails</a>
+        <a href = "homepage.html" id="home">HOME</a>
+        <a href = "GalleryPage.html" id="gallery">GALLERY</a>
+        <a href = "QUIZ.html" id="quiz">QUIZ</a>
+        <a href = "feedback.html" id="feedback">FEEDBACK</a>
+        <a href = "shop.html" id="shop" style="background-color:gray;">SHOP</a>
+        <a href = "part_2.html" id="about">ABOUT US</a>
+        <a href = "siteMapPage.html" id="sitemap">SITE MAP</a>
+
+    </div>
+
+    <form name = "shoppingForm" action = "#" onsubmit = "return validateShoppingForm();" method = "post">
+
+          <h1 style = "text-align:center">Souvenirs from Ceylon</h1>
+
+          <div class="product_1">
+
+              <img src="Images/ceylon-tea.jpg" alt="Pure Ceylon Tea" id="logo1" >
+
+              <div class="logo">Pure Ceylon Tea 1kg<br><p> $ 20 </p>  </div>
+
+              <label for="quantity1">Quantity:</label><br>
+
+              <input type="text" readonly  id="quantity1" value="0" size="1">
+
+              <input type="button" value="+" onclick='changeOne("quantity1",1,"price1",20)' >
+
+              <input type="button" value="-" onclick='changeOne("quantity1",-1,"price1",20)'><br><br>
+
+              <label for="price1">Price:</label><br>
+
+              <input type="text" readonly  id="price1" value="0" size="9">
+
+          </div>
+
+          <div class="product_2">
+
+              <img src="Images/cposter.jpg" alt="Sigiriya Wall Art CEYLON" id="logo2">
+
+              <div class="logo">Sigiriya Wall Art "CEYLON"<br><p> $ 15 </p>  </div>
+
+              <label for="quantity2">Quantity:</label><br>
+
+              <input type="text" readonly  id="quantity2" value="0" size="1">
+
+              <input type="button" value="+" onclick='changeOne("quantity2",1,"price2",15)' >
+
+              <input type="button" value="-" onclick='changeOne("quantity2",-1,"price2",15)'><br><br>
+
+              <label for="price2">Price:</label><br>
+
+              <input type="text" readonly  id="price2" value="0" size="9">
+
+          </div>
+
+          <div class="product_3">
+
+              <img src="Images/9arch.jpg" alt="9 Arch Demodara Key Pendant" id="logo3">
+
+              <div class="logo">9 Arch Demodara Pendant<br><p> $10 </p>  </div>
+
+              <label for="quantity3">Quantity:</label><br>
+
+              <input type="text"  readonly  id="quantity3" value="0" size="1">
+
+              <input type="button" value="+" onclick='changeOne("quantity3",1,"price3",10)' >
+
+              <input type="button" value="-" onclick='changeOne("quantity3",-1,"price3",10)'><br><br>
+
+              <label for="price3">Price:</label><br>
+
+              <input type="text" readonly id="price3" value="0" size="9">
+
+          </div>
+
+          <div class="product_4">
+
+              <img src="Images/elephant.jpg" alt="Handmade Wooden Elephant" id="logo4">
+
+              <div class="logo">Handmade Wooden Elephant<br><p> $29 </p>  </div>
+
+              <label for="quantity4">Quantity:</label><br>
+
+              <input type="text" readonly  id="quantity4" value="0" size="1">
+
+              <input type="button" value="+" onclick='changeOne("quantity4",1,"price4",29)' >
+
+              <input type="button" value="-" onclick='changeOne("quantity4",-1,"price4",29)'><br><br>
+
+              <label for="price4">Price:</label><br>
+
+              <input type="text" readonly id="price4" value="0" size="9">
+
+          </div>
+
+          <div class="orderPlacement">
+
+              <label id="rules" for="firstName">* Fields must be filled.</label><br><br>
+
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name *">
+
+              <input type="text" id="lastName" placeholder="Enter your last name">
+
+              <input type="text" id="contactNumber" maxlength="10" placeholder="Enter your contact number *" size="22">
+
+              <input type="text" id="address" placeholder="Enter your shipping address *" size="25"><br><br>
+
+              <button id="submit" type="submit"> Place Order </button>
+
+          </div>
+
+    </form>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+
+                <div class="header">
+
+                    <p>Dear <span id="fName"></span>,</p>
+
+                    <p>Your order has been placed.</p>
+
+                    <p>Your Shopping Cart is as follows...</p>
+
+                </div>
+
+                <div class="body">
+
+                    <p><span id="cart1">No items of Pure Ceylon Tea</span></p>
+
+                    <p><span id="cart2">No items of Sigiriya Wall Art "CEYLON"</span></p>
+
+                    <p><span id="cart3">No items of 9 Arch Demodara Pendant</span></p>
+
+                    <p><span id="cart4">No items of Handmade Wooden Elephant</span></p>
+
+                </div>
+
+                <div class="footer">
+
+                    <p id="totalBill"></p>
+
+                    <input type="button" id="close" value="Close" onclick="closeWindow()" >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <footer>
+
+        <p class="footer_p">
+
+        <a class="footer_des email" href="part_2.html">Visit Us</a>
+
+        <span class="footer_sep">|</span><a class="footer_des dev" href="DevSahan.html">Page Developer</a>
+
+        </p>
+
+  <span class="footer_sep footer_sep--large">|</span>
+
+  <p class="footer_p">
+
+      <span class="footer_des" >&#xa9 Group:D_08 </span>
+
+      <span class="footer_sep">|</span><span class="footer_des" id = "logoFooter">Lankan Trails</span>
+
+  </p>
+
+    </footer>
+
+</body>
+
+</html>

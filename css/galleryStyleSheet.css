@@ -1,0 +1,144 @@
+/* default margins and paddings has been set to zero*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-width:1300px;
+	font-family: “Arial”, Helvetica, sans-serif;
+}
+
+#gallery {
+	background-color:gray;
+}
+
+
+#buttonEasy {
+	background-color:#eee;
+	border-radius: 10px;
+	padding:5px;
+}
+
+.colorChange {
+	text-align:right;
+	font-size:20px;
+	padding:20px;
+	background-color: #C0C0C0;
+}
+
+.colorSelection {
+	display:inline;
+	padding:20px;
+}
+
+#backGroundColor , #fontColor {
+	padding:5px;
+	background-color:#eee;
+	border: solid,1px;
+	border-radius: 10px;
+}
+
+.colorChange label {
+	color:black;
+}
+
+.row{
+	margin-top:50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+	float: left;
+	padding: 10px;
+}
+
+.left {
+	width: 60%;
+}
+
+.right {
+	width: 40%;
+}
+
+.mainImageDiv {
+	z-index: -1;
+	background-color: white;
+	width: 100%; 
+	height: 450px;
+	position: relative;
+	border: solid 4px #C0C0C0;
+}
+
+.mainImage {
+	width: 100%; 
+	height: 100%;
+}
+
+.desClass {
+	text-align:center;
+	border: solid 4px #C0C0C0;
+	height: 450px;
+}
+
+.desTopic {
+	font-family: “Arial”, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;	
+	
+}
+
+.desQuote {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-family: Apple Chancery, cursive;
+	font-size: 30px;
+	padding:5px;
+	
+}
+
+#desPara {
+	padding: 20px;
+	font-size: 18px;
+}
+
+
+.imagesSet {
+	background-color: #ccc;
+}
+
+.imagesList {
+	margin-bottom: 10px;
+	float:left;
+	height: 150px;
+	position:relative;
+	width: 20%;
+}
+
+.imgClass {
+	height: 100%;
+	width: 100%;
+}
+	
+.imgClass:hover {
+	opacity: 0.8;
+
+}
+
+.description {
+	
+	top:0px;
+	width:100%;
+	color:black;
+	position:absolute;
+	background-color: #EBFBFF;
+	opacity: 0.5;
+	text-align: center;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		About Us
+	</title>
+	<link rel="icon" href="logo/favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/information.css">
+	<link rel="stylesheet" type="text/css" href="css/common-layoutT.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+
+     <div class="topnav">
+    <a class="active" href="homepage.html" >Lankan Trails</a>
+    
+	<a href="homepage.html" id="home">HOME</a>
+    <a href="galleryPage.html" id="gallery">GALLERY</a>
+	<a href="QUIZ.html" id="quiz">QUIZ</a>
+    <a href="feedback.html" id="feedback">FEEDBACK</a>
+    <a href="shop.html" id="shop">SHOP</a>
+	<a href="part_2.html" id="about" style='background-color:gray;'>ABOUT US</a>
+	<a href="siteMapPage.html" id="sitemap">SITE MAP</a>
+  </div>
+    <h1> MEET THE TEAM </h1>
+
+	<div class="student_1">
+		<img src="Images/student1.jpg" class="img1" height="300" width="300" onmouseover="function01();">
+		<p id ="information1" class="information1"> D.L.H.S.L. Rohitha <br> Student 1 </p>
+	</div>
+
+	<div class="student_2">
+		<img src="Images/student2.jpg" class="img2" height="300" width="300" onmouseover="function02();">
+		<p id ="information2" class="information2"> P.D. Rodrigo <br> Student 2  </p>
+	</div>
+
+	<div class="student_3">
+		<img src="Images/student3.jpg" class="img3" height="300" width="300" onmouseover="function03();">
+		<p id ="information3" class="information3"> M.K.A.T. Lakshan <br> Student 3 </p>
+	</div>
+
+	<div class="student_4">
+		<img src="Images/student4.jpeg" class="img4" height="300" width="300" onmouseover="function04();">
+		<p id ="information4" class="information4"> J.A.D.J. Sathushka <br> Student 4 </p>
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
+		function function01(){
+			document.getElementById("information1").style.visibility="visible";
+			document.getElementById("information2").style.visibility="hidden";
+			document.getElementById("information3").style.visibility="hidden";
+			document.getElementById("information4").style.visibility="hidden";
+			
+		}
+
+		function function02(){
+			
+			document.getElementById("information2").style.visibility="visible";
+			document.getElementById("information1").style.visibility="hidden";
+			document.getElementById("information3").style.visibility="hidden";
+			document.getElementById("information4").style.visibility="hidden";
+
+
+        }
+
+        function function03(){
+        	
+			document.getElementById("information3").style.visibility="visible";
+			document.getElementById("information2").style.visibility="hidden";
+			document.getElementById("information1").style.visibility="hidden";
+			document.getElementById("information4").style.visibility="hidden";
+        }
+
+        function function04(){
+            document.getElementById("information4").style.visibility="visible";
+			document.getElementById("information2").style.visibility="hidden";
+			document.getElementById("information1").style.visibility="hidden";
+			document.getElementById("information3").style.visibility="hidden";
+        }
+
+	</script>
+
+	<footer>
+  <p class="footer_p">
+      <a class="footer_des email" href="part_2.html">Visit Us</a>
+      <span class="footer_sep">|</span><a class="footer_des dev" href="student_3.html">Page Developer</a>
+  </p>
+  <span class="footer_sep footer_sep--large">|</span>
+  <p class="footer_p">
+      <span class="footer_des" >&#xa9 Group:D_08 </span>
+      <span class="footer_sep">|</span><span class="footer_des" id = "logoFooter">Lankan Trails</span>
+  </p>
+</footer>
+
+
+</body>
+</html>

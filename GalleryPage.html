@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Gallery</title>
+<link rel="icon" href="logo/favicon.jpg">
+<link rel = 'stylesheet' href = 'css/galleryStyleSheet.css' href = 'favicon.png'>
+<meta charset = 'UTF-8'>
+<link rel="stylesheet" type="text/css" href="css/common-layout.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!--Navigation Bar -->
+  <div class="topnav">
+    <a class="active" href="homepage.html" >Lankan Trails</a>
+    
+	<a href="homepage.html" id="home">HOME</a>
+    <a href="GalleryPage.html" id="gallery">GALLERY</a>
+	<a href="QUIZ.html" id="quiz">QUIZ</a>
+    <a href="feedback.html" id="feedback">FEEDBACK</a>
+    <a href="shop.html" id="shop">SHOP</a>
+	<a href="part_2.html" id="about">ABOUT US</a>
+	<a href="SiteMapPage.html" id="sitemap">SITE MAP</a>
+  </div>
+
+<!--Colour pickers -->
+<div class = 'colorChange'>
+	<a href = '#goToGallery'><button type = 'button' id = 'buttonEasy'>Easy View</button></a>
+	<div class = 'colorSelection'>
+		<label for = 'backGroundColor'>Background Colour:</label>
+		<select id = 'backGroundColor' name = 'backGroundColor' class = 'backGroundColor' >
+			<option value = 'selectHere'>---Default---</option>
+			<option value = 'grey'>Grey</option>
+			<option value = 'lBlue'>Light Blue</option>
+		</select>
+	</div>
+	
+	<div class = 'colorSelection'>
+		<label for = 'fontColor'>Text Colour:</label>
+		<select id = 'fontColor' name = 'fontColor' class = 'fontColor' >
+			<option value = 'selectHere'>---Default---</option>
+			<option value = 'fBlue'>Blue</option>
+			<option value = 'fMaroon'>Maroon</option>
+		<select>
+	</div>	
+</div>
+
+<!--Main Content-->
+<div class = 'row'>
+	<div class = 'column left' id = 'goToGallery'>
+		<div class = 'mainImageDiv'>
+			<img src = 'Images/1.png' class = 'mainImage' id = 'mainImage' >
+		</div>
+	</div>
+		
+	<div class = 'column right'>
+		<div class = 'desClass'>
+			<p class = 'desTopic' id = 'desTopic'></p>
+			<p class = 'desQuote' id = 'desQuote'>
+			" Life is short and the world is wide, Travel today....... "
+			</p>
+			<p id = 'desPara'></p>
+		</div>
+	</div>
+</div>
+
+<div class = 'imagesSet'>		
+		<div class = 'imagesList'>
+			<img alt = 'Arugam Bay' src = 'Images/arugamBayJ.jpg' class = 'imgClass' onmouseover = 'picOne()' >
+			<div class = 'description'>
+				<p>Arugam Bay</p>
+			</div>
+		</div>
+
+		<div class = 'imagesList'>
+			<img alt = 'Colombo' src = 'Images/colomboJ.jpg' class = 'imgClass' onmouseover = 'picTwo()'>
+			<div class = 'description'>
+				<p>Colombo</p>
+			</div>
+		</div>
+
+		<div class = 'imagesList'>
+			<img alt = 'Yala' src = 'Images/yalaJ.jpg' class = 'imgClass' onmouseover = 'picThree()'>
+			<div class = 'description'>
+				<p>Yala National Park</p>
+			</div>
+		</div>
+
+		<div class = 'imagesList'>	
+			<img alt = 'Nuwara Eliya' src = 'Images/nuwaraEliyaJ.jpg' class = 'imgClass' onmouseover = 'picFour()'>
+			<div class = 'description'>
+				<p>Nuwara Eliya</p>
+			</div>
+		</div>	
+
+		<div class = 'imagesList'>	
+			<img alt = 'Kandy' src = 'Images/kandyJ.jpg' class = 'imgClass'onmouseover = 'picFive()'>
+			<div class = 'description'>
+				<p>Kandy</p>
+			</div>
+		</div>		
+</div>
+
+<!--Footer-->
+<footer>
+  <p class="footer_p">
+      <a class="footer_des email" href="part_2.html">Visit Us</a>
+      <span class="footer_sep">|</span><a class="footer_des dev" href="DevJanindu.html">Page Developer</a>
+  </p>
+  <span class="footer_sep footer_sep--large">|</span>
+  <p class="footer_p">
+      <span class="footer_des" >&#xa9 Group:D_08 </span>
+      <span class="footer_sep">|</span><span class="footer_des" id = "logoFooter">Lankan Trails</span>
+  </p>
+</footer>
+
+
+
+<script>
+
+	document.getElementById('backGroundColor').addEventListener('change' , changeColorB );
+	
+	document.getElementById('fontColor').addEventListener('change' , changeColorF );
+	<!--Back ground colour change -->
+	function changeColorB() {
+		var selectedColorB = document.getElementById('backGroundColor').value ;
+		
+		if ( selectedColorB == 'grey') {
+			document.body.style.backgroundColor = '#ededed' ;
+		}
+		else if ( selectedColorB == 'lBlue') {
+			document.body.style.backgroundColor = '#ADD8E6' ;
+		}
+		else {
+			document.body.style.backgroundColor = 'white' ;
+		}
+	} 
+	
+	<!--font colour change -->
+	function changeColorF() {
+		var selectedColorF = document.getElementById('fontColor').value ;
+		
+		if ( selectedColorF == 'fBlue') {
+			document.body.style.color = '#191970' ;
+		}
+		else if ( selectedColorF == 'fMaroon') {
+			document.body.style.color = '#350000' ;
+		}
+		else {
+			document.body.style.color = 'black' ;
+		}
+	} 
+	
+		<!--On mosue over function in thumbnail images -->
+	function picOne() {
+		document.getElementById('mainImage').src = 'Images/arugamBayJ.jpg';
+		document.getElementById('desQuote').innerHTML = '';
+		document.getElementById('desTopic').innerHTML = 'ARUGAM BAY';	
+		document.getElementById('desPara').innerHTML = 'Enchanting Arugambay is the famous surfer paradise for both foreigners and locals. Located 212 miles away from Colombo(Capital). Arugam bay is mostly famous because of the great locations for surfing , shiny beaches and  for summer-like weather around the whole year.  Beachfront guesthouses, snorkeling, diving places and corals are some other tourist attractions.';
+	
+	}
+	function picTwo() {
+		document.getElementById('mainImage').src = 'Images/colomboJ.jpg';
+		document.getElementById('desQuote').innerHTML = '';
+		document.getElementById('desTopic').innerHTML = 'COLOMBO';	
+		document.getElementById('desPara').innerHTML = 'Colombo, The heart of Sri Lanka is an intense, dynamic and very populated commercial city. Mostly famous among tourists because of the exciting night-life, casinos, clubs and the luxurious facilities this city provides. Here are some few things to do in Colombo; explore fort, visit national museum, visit galle face green and green path gallery.';
+	
+	}
+	function picThree() {
+		document.getElementById('mainImage').src = 'Images/yalaJ.jpg';
+		document.getElementById('desQuote').innerHTML = '';
+		document.getElementById('desTopic').innerHTML = 'YALA NATIONAL PARK';	
+		document.getElementById('desPara').innerHTML = 'Yala National Park is one of the biggest national parks in Sri Lanka. It is situated 12km away from Arugam Bay. It is also known as the ‘Kumana National Park’. Yala safari tours are mostly famous because of its wildlife specially which is home for many leopards, elephants and reptiles etc. Dawn and dusk timing is the best time for safaris inside yala.';
+	
+	}
+	function picFour() {
+		document.getElementById('mainImage').src = 'Images/nuwaraEliyaJ.jpg';
+		document.getElementById('desQuote').innerHTML = '';
+		document.getElementById('desTopic').innerHTML = 'NUWARA ELIYA';
+		document.getElementById('desPara').innerHTML = 'Nuwara Eliya is known as ‘Little England’ which is a resort city in the center of Sri Lanka. Blessed with a cold-dish climate, breathtaking views of waterfalls and mountains. Nuwara Eliya is only 180 Km away from Colombo(Capital). And also produces a significant amount of famous ceylon tea which is famous all around the world.';
+	
+	}
+	function picFive() {
+		document.getElementById('mainImage').src = 'Images/kandyJ.jpg';
+		document.getElementById('desQuote').innerHTML = '';
+		document.getElementById('desTopic').innerHTML = 'KANDY';
+		document.getElementById('desPara').innerHTML = 'Kandy(Nuwara) is a very charming city and also the hill capital of Sri Lanka. It is known as the second largest city in Sri Lanka. This sacred Buddhist site holds the tooth relic of lord buddha (the sacred tooth of the Buddha) in the temple called as the ‘Temple Of The Tooth’. This city is the center of the country’s both culture and religion.';
+	}
+	
+	
+	
+</script>
+
+</body>
+</html>

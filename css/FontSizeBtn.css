@@ -1,0 +1,33 @@
+.fontSize{
+    width: 150px;
+    left: 1325px;
+    top: 50px;
+    position: absolute;
+    padding: 20px;
+}
+
+#fontSizeText{
+
+    font-size: 18px;
+}
+
+#fontMaxBtn{
+
+    background-color: rgb(28, 131, 199);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#fontMinBtn{
+
+    background-color: rgb(28, 131, 199);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+}

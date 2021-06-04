@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		QUIZ
+	</title>
+	<link rel="icon" href="logo/favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/STYLE.css">
+    <link rel="stylesheet" type="text/css" href="css/common-layoutT_Q.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+</head>
+<body>
+
+	<div class="topnav">
+    <a class="active" href="homepage.html" >Lankan Trails</a>
+    
+	<a href="homepage.html" id="home">HOME</a>
+    <a href="galleryPage.html" id="gallery">GALLERY</a>
+	<a href="QUIZ.html" id="quiz" style='background-color:grey'>QUIZ</a>
+    <a href="feedback.html" id="feedback">FEEDBACK</a>
+    <a href="shop.html" id="shop">SHOP</a>
+	<a href="part_2.html" id="about">ABOUT US</a>
+	<a href="siteMapPage.html" id="sitemap">SITE MAP</a>
+  </div>
+
+	<div class="box" id="box"> 
+	<img src="Images/image_1.jpg" class="img">
+	<h1> QUIZ GAME </h1>
+	<div class="instructions"> <p class="ins"> The questions in this quiz game are based on tourism places in sri lanka. You will get 60 seconds to answer all the questions.
+	Click BEGIN to start. <br>
+	 </p>  </div>
+	<input type="button" id="btn_1" value="BEGIN" class="btn" onclick="function_1();">
+	
+	
+    </div>
+
+
+
+    <div class="after_btn" id="after_btn">
+
+    	<form id="quiz" class="qiuz" name="quiz">
+    	<p class="p1" > 1) In which distrctis sigiriya located? </p>
+    	<input type="radio" name="question_1" value="Matale district" > Matale district <br>
+    	<input type="radio" name="question_1" value="Matara district" > Matara district <br>
+
+    	<p class="p2"> 2) Who built Sigiriya? </p>
+    	<input type="radio" name="question_2" value="King kashapa"> King kashapa <br>
+    	<input type="radio" name="question_2" value="king dutugemunu"> king dutugemunu <br>
+      
+        <p class="p3"> 3) where is Nine Arch bridge located in? </p>
+    	<input type="radio" name="question_3" value="Demodara"> Demodara <br>
+    	<input type="radio" name="question_3" value="Galle"> Galle <br>
+
+    	<p class="p4"> 4) what is Mirissa famaous for? </p>
+    	<input type="radio" name="question_4" value="Whale watching"> Whale watching <br>
+    	<input type="radio" name="question_4" value="Hikking"> Hikking <br>
+
+    	<p class="p5"> 5) In which year did the sinharaja forest became a world heritage? </p>
+    	<input type="radio" name="question_5" value="1988"> 1988 <br>
+    	<input type="radio" name="question_5" value="1890"> 1890 <br>
+
+    	<p class="p6"> 6) Where is Gal viharaya located in? </p>
+    	<input type="radio" name="question_6" value="South province"> South province <br>
+    	<input type="radio" name="question_6" value="North central province"> North central province <br>
+
+    	<p class="p7"> 7) Where is the Samadhi Statue located in? </p>
+    	<input type="radio" name="question_7" value="Anuradhapura"> Anuradhapura <br>
+    	<input type="radio" name="question_7" value="Polonnaruwa"> Polonnaruwa <br>
+
+    	<p class="p8"> 8) Where is the Kuttam pokuna located in? </p>
+    	<input type="radio" name="question_8" value="Jaffana"> Jaffana <br>
+    	<input type="radio" name="question_8" value="Anuradhapura"> Anuradhapura <br>
+
+    	<p class="p9"> 9) Where is the Jungle beach located in? </p>
+    	<input type="radio" name="question_9" value="Galle"> Galle <br>
+    	<input type="radio" name="question_9" value="Matara"> Matara <br>
+
+    	<p class="p10"> 10) Who built Parakramasamudraya? </p>
+    	<input type="radio" name="question_10" value="King Parakrama"> King Parakrama  <br>
+    	<input type="radio" name="question_10" value="king kashapa"> king kashyapa <br>
+
+        <p> 
+
+
+
+
+
+
+        </p>
+
+    	<input type="button" id="button_2" value="Finished"  class="button_2" onclick="functioncheck();">
+
+    	<p id="final">  </p>
+    	<div id="container" class="container">
+    		<div id="timeremaining"> Time Remaining: <span id="timeremainingvalue"> 60 </span> sec </div>
+
+    	</div>
+
+
+
+
+
+    </div>
+    <div class="final_results" id="final_results"> 
+     <p id="p0"> Results </p> 
+     <p id="p11">  </p> 	
+     <p id="p1">  </p>
+     <p id="p2">  </p>
+     <p id="p3">  </p>
+     <p id="p4">  </p>
+     <p id="p5">  </p>
+     <p id="p6">  </p>
+     <p id="p7">  </p>
+     <p id="p8">  </p>
+     <p id="p9">  </p>
+     <p id="p10">  </p>
+     
+     <p id="p12">  </p>
+
+
+    </div>
+
+    <div id="ft">
+
+    <footer >
+      <p class="footer_p">
+      <a class="footer_des email" href="part_2.html">Visit Us</a>
+      <span class="footer_sep">|</span><a class="footer_des dev" href="student_3.html">Page Developer</a>
+      </p>
+      <span class="footer_sep footer_sep--large">|</span>
+      <p class="footer_p">
+      <span class="footer_des" >&#xa9 Group:D_08 </span>
+      <span class="footer_sep">|</span><span class="footer_des" id = "logoFooter">Lankan Trails</span>
+       </p>
+   </footer>
+ </div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	function function_1(){
+		document.getElementById("box").style.visibility="hidden";
+		document.getElementById("after_btn").style.visibility="visible";
+		var timeremaining;
+		timeremaining=60; 
+		document.getElementById("timeremainingvalue").innerHTML=timeremaining;
+		startcountdown();
+		    
+		
+	}
+
+	function functioncheck(){
+
+		var question1 = document.quiz.question_1.value;
+		var question2 = document.quiz.question_2.value;
+		var question3 = document.quiz.question_3.value;
+		var question4 = document.quiz.question_4.value;
+		var question5 = document.quiz.question_5.value;
+		var question6 = document.quiz.question_6.value;
+		var question7 = document.quiz.question_7.value;
+		var question8 = document.quiz.question_8.value;
+		var question9 = document.quiz.question_9.value;
+		var question10= document.quiz.question_10.value;
+		var score=0;
+		document.getElementById("final_results").style.visibility="visible";
+		document.getElementById("after_btn").style.visibility="hidden";
+		
+		//document.getElementById("img_2").style.visibility="hidden";
+        
+		
+        //question  1
+
+		if (question1== "Matale district"){
+			score=score+2
+			document.getElementById("p1").innerHTML=("1) What is the capital of sri lanka?  Matale district <span class='correct'> &#10004</span><br><br>");
+			
+		}
+		else if(question1=="Matara district"){
+			score=score-1
+			document.getElementById("p1").innerHTML=("1) What is the capital of sri lanka? Matara district   <span class='incorrect'>&#10006</span><br><br>");
+			
+		}
+		else{
+			score=score-1
+			document.getElementById("p1").innerHTML=("1) What is the capital of sri lanka?  No answer given   <span class='incorrect'>&#10006</span><br><br>");
+			
+			
+		}
+
+        
+
+
+        //question  2
+
+        if (question2=="King kashapa"){
+        	score=score+2;
+        	document.getElementById("p2").innerHTML=("2) Who was built Sigiriya?  King kashapa <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if (question2=="king dutugemunu"){
+        	score=score-1;
+        	document.getElementById("p2").innerHTML=("2) Who was built Sigiriya? king dutugemunu   <span class='incorrect'>&#10006</span><br><br>");
+
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p2").innerHTML=("2) Who was built Sigiriya?   No answer given    <span class='incorrect'>&#10006</span><br><br>");
+        	
+        }
+
+
+
+        //question  3 
+
+        if (question3=="Demodara"){
+        	score=score+2;
+        	document.getElementById("p3").innerHTML=("3) where is Nine Arch bridge located in?  Demodara <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if (question3=="Galle") {
+        	score=score-1;
+        	document.getElementById("p3").innerHTML=("3)  where is Nine Arch bridge located in? Galle   <span class='incorrect'>&#10006</span><br><br>");	
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p3").innerHTML=("3)  where is Nine Arch bridge located in? No answer given   <span class='incorrect'>&#10006</span><br><br>");
+        	
+        }
+
+        
+        //question  4
+
+        if (question4=="Whale watching"){
+        	score=score+2;
+        	document.getElementById("p4").innerHTML=("4) what is Mirissa famaous for?  Whale watching <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if(question4=="Hikking"){
+        	score=score-1;
+        	document.getElementById("p4").innerHTML=("4)  what is Mirissa famaous for? Hikking  <span class='incorrect'>&#10006</span><br><br>");		
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p4").innerHTML=("4)  what is Mirissa famaous for? No answer given  <span class='incorrect'>&#10006</span><br><br>");
+
+        }
+      
+
+   
+
+
+        //question 5
+
+        if (question5=="1988"){
+        	score=score+2;
+        	document.getElementById("p5").innerHTML=("5) In which year did the sinharaja forest became a world heritage?  1988 <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if (question5=="1890"){
+        	score=score-1;
+        	document.getElementById("p5").innerHTML=("5)  In which year did the sinharaja forest became a world heritage? 1890  <span class='incorrect'>&#10006</span><br><br>");	
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p5").innerHTML=("5)  In which year did the sinharaja forest became a world heritage? No answer given <span class='incorrect'>&#10006</span><br><br>");
+
+        }
+
+        //question 6
+
+        if (question6=="North central province"){
+        	score=score+2;
+        	document.getElementById("p6").innerHTML=("6) Where is Gal viharaya located in?  North central province <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if (question6=="North central province") {
+        	score=score-1;
+        	document.getElementById("p6").innerHTML=("6)  Where is Gal viharaya located in? South province  <span class='incorrect'>&#10006</span><br><br>");
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p6").innerHTML=("6)  Where is Gal viharaya located in? No answer given  <span class='incorrect'>&#10006</span><br><br>")
+        }
+
+
+
+
+
+        //question 7
+
+        if (question7=="Anuradhapura"){
+        	score=score+2;
+        	document.getElementById("p7").innerHTML=("7) Where is the Samadhi Statue located in?  Anuradhapura <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if (question7=="Polonnaruwa") {
+        	score=score-1;
+        	document.getElementById("p7").innerHTML=("7)  Where is the Samadhi Statue located in? Polonnaruwa  <span class='incorrect'>&#10006</span><br><br>");		
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p7").innerHTML=("7)  Where is the Samadhi Statue located in? No answer given   <span class='incorrect'>&#10006</span><br><br>");
+        }
+
+
+
+        //question 8
+
+        if (question8=="Jaffana"){
+        	score=score+2;
+        	document.getElementById("p8").innerHTML=("8) Where is the Kuttam pokuna located in?  Jaffana <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if(question8=="Anuradhapura"){
+        	score=score-1;
+        	document.getElementById("p8").innerHTML=("8)   Where is the Kuttam pokuna located in? Anuradhapura  <span class='incorrect'>&#10006</span><br><br>");		
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p8").innerHTML=("8)   Where is the Kuttam pokuna located in?  No answer given <span class='incorrect'>&#10006</span><br><br>");
+        }
+
+
+        //question 9
+
+        if (question9=="Galle"){
+        	score=score+2;
+        	document.getElementById("p9").innerHTML=("9) Where is the Jungle beach located in?  Galle <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if(question9=="Matara"){
+        	score=score-1;
+        	document.getElementById("p9").innerHTML=("9)   Where is the Jungle beach located in? Matara  <span class='incorrect'>&#10006</span><br><br>");	
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p9").innerHTML=("9)   Where is the Jungle beach located in? No answer given   <span class='incorrect'>&#10006</span><br><br>");
+        }
+        
+
+
+        //question 10
+
+        if (question10=="King Parakrama"){
+        	score=score+2;
+        	document.getElementById("p10").innerHTML=("10) Who was built Parakramasamudraya?  King Parakrama <span class='correct'> &#10004</span><br><br>");
+        	
+        }
+        else if(question10=="king kashapa"){
+        	score=score-1;
+        	document.getElementById("p10").innerHTML=("10) Who was built Parakramasamudraya? king kashapa  <span class='incorrect'>&#10006</span><br><br>");		
+        }
+        else{
+        	score=score-1;
+        	document.getElementById("p10").innerHTML=("10) Who was built Parakramasamudraya? No answer given  <span class='incorrect'>&#10006</span><br><br>");
+        }
+
+
+
+        
+        if (score<=10){
+        	 document.body.style.backgroundColor = "#ff842b";
+        }
+
+
+         
+        else{
+        	 document.body.style.backgroundColor = "#aaec68";
+        }
+        if(score<0){
+        	score=0;
+        }
+        document.getElementById("p11").innerHTML="Your Score is "+ score;
+
+       
+        
+
+        
+       
+
+	}
+
+	function startcountdown(){ 
+		
+		var timeremaining;
+		var action;
+		timeremaining=60;
+		 
+
+		 action=setInterval(function(){
+		 timeremaining -= 1;
+	     document.getElementById("timeremainingvalue").innerHTML=timeremaining;
+	     if(timeremaining==0){
+	     	functioncheck();
+            
+	     }
+
+	 }, 1000);
+      
+	}
+
+	
+
+	
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>	
+	

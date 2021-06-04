@@ -1,0 +1,34 @@
+body{
+	background-color: lightgrey;
+}
+
+.box{
+	position:relative;
+	height:600px;
+	width:600px;
+	left: 500px;
+	bottom:	-50px;
+	background-color:grey;
+	box-sizing: border-box;
+	border-bottom-left-radius: 30%;
+	border-top-right-radius: 30%;
+	visibility: visible;
+    text-align: center;
+
+}
+
+img{
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	position: relative;
+	left:10px;
+}
+
+h1{
+	position: relative;
+
+}
+p{
+	font-size: 20px;
+}

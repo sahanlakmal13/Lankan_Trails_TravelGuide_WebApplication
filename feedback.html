@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FeedBack</title>
+<link rel="icon" href="logo/favicon.jpg">
+       <link rel="stylesheet" type="text/css" href="css/common-layout.css">
+       <link rel="stylesheet" type="text/css" href="css/formcss.css">
+       <script src="js/formjs.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="homepage.html" >Lankan Trails</a>
+    
+	<a href="homepage.html" id="home">HOME</a>
+    <a href="GalleryPage.html" id="gallery">GALLERY</a>
+	<a href="QUIZ.html" id="quiz">QUIZ</a>
+    <a href="feedback.html" id="feedback" style ="background-color:gray">FEEDBACK</a>
+    <a href="shop.html" id="shop">SHOP</a>
+	<a href="part_2.html" id="about">ABOUT US</a>
+	<a href="SiteMapPage.html" id="sitemap">SITE MAP</a>
+  </div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>YOUR FEEDBACK</h1>
+    <p>GIVE US YOUR FEEDBACK FIRST WHEN YOU ARE GOING TO LEAVE..........</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Images/ninearc.jpg" style="width:100%">
+	   <img src="Images/bd.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form name="form">
+        <label for="name">YOUR NAME</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">EMAIL</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="comments">COMMENTS</label>
+        <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px"></textarea>
+		 <p>RATE US :</p>
+           <input type="radio" id="excellent" name="rate us" value="excellent">
+           <label for="excellent">EXCELLENT</label><br><br>
+           <input type="radio" id="good" name="rate us" value="good">
+           <label for="good">GOOD</label><br><br>
+           <input type="radio" id="bad" name="rate us" value="bad">
+           <label for="bad">BAD</label><br><br><br>
+
+           <input type="button" id="submitButton" value="Submit Feedback" onclick="feedback()">
+		
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="footer_p">
+      <a class="footer_des email" href="part_2.html">Visit Us</a>
+      <span class="footer_sep">|</span><a class="footer_des dev" href="my.html">Page Developer</a>
+  </p>
+  <span class="footer_sep footer_sep--large">|</span>
+  <p class="footer_p">
+      <span class="footer_des" >&#xa9 Group:D_08 </span>
+      <span class="footer_sep">|</span><span class="footer_des" id = "logoFooter">Lankan Trails</span>
+  </p>
+</footer>
+<script src="javascript/feedback.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<link rel="icon" href="logo/favicon.jpg">
+		<link rel="stylesheet" type="text/css" href="css/common-layout.css">
+		<link rel="stylesheet" type="text/css" href="css/mainpage.css">
+		<link rel="stylesheet" type="text/css" href="css/FontSizeBtn.css">
+	
+		<title>Travel-Home</title>
+
+	</head>
+
+	<body>
+
+		<script src="javascript/homePageScript.js"></script>
+
+		<div class="topnav">
+
+			<a class="active" href="homePage.html" >Lankan Trails</a>
+			
+			<a href="homePage.html" id="home" style="background-color:gray;">HOME</a>
+			<a href="GalleryPage.html" id="gallery">GALLERY</a>
+			<a href="QUIZ.html" id="quiz">QUIZ</a>
+			<a href="feedback.html" id="feedback">FEEDBACK</a>
+			<a href="shop.html" id="shop">SHOP</a>
+			<a href="part_2.html" id="about">ABOUT US</a>
+			<a href="SiteMapPage.html" id="sitemap">SITE MAP</a>
+
+	  	</div>
+
+		<div class="banner_container">
+
+			<div class="banner_img_cover">
+
+				<div class="banner_content">
+				
+					<h1 id="text1" class="dramatic_h">Welcome to Srilanka.</h1>
+							<p id="text2" class="dramatic_p">We provide travel guide,
+															 <br>articles, help &
+								<br>much more to all the
+															 <br>travellers
+								<br>around the world! </p>
+							<a id="text3" class="dramatic_a" href="feedback.html">GIVE YOUR FEEDBACK</a>
+				</div>
+
+			</div>
+
+			<img class="banner_img" src="Images/banner.jpg" alt="banner">
+
+			<div class="fontSize">
+
+				<p id="fontSizeText">Change Font Size</p>
+				<input type="button" id="fontMaxBtn" value="+" onclick="changeFontSize(1)">
+				<input type="button" id="fontMinBtn" value="-" onclick="changeFontSize(-1)">
+
+			</div>
+
+		</div>
+
+		<div class="articleMainDiv" align = "center">
+
+			<a href="locationPPage.html" class = 'articleImages'><img src="Images/ellaLink.jpg" width="250" height="250" alt="ella"></a>
+			<a href="locationJPage.html" class = 'articleImages'><img src="Images/sigiriyaLink.jpg" width="250" height="250" alt="sigiriya"></a>
+			<a href="locationSPage.html" class = 'articleImages'><img src="Images/anuradhapuraLink.jpg" width="250" height="250" alt="anuradhapura"></a>
+			<a href="locationT.html" class = 'articleImages'><img src="Images/galleLink.jpg" width="250" height="250" alt="galle"></a>
+
+		</div>
+
+		<footer>
+
+	  		<p class="footer_p">
+		  	<a class="footer_des email" href="part_2.html">Visit Us</a>
+		  	<span class="footer_sep">|</span><a class="footer_des dev" href="my.html">Page Developer</a>
+	  		</p>
+	  		<span class="footer_sep footer_sep--large">|</span>
+	  		<p class="footer_p">
+		  	<span class="footer_des" >&#xa9;Group:D_08 </span>
+		  	<span class="footer_sep">|</span><span class="footer_des" id = "logoFooter">Lankan Trails</span>
+	  		</p>
+
+		</footer>
+
+	</body>
+
+</html>

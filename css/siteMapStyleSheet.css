@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: “Arial”, Helvetica, sans-serif;
+	min-width:1300px;
+}
+
+#sitemap {
+	background-color:gray;
+}
+
+.topic{	
+	font-size:45px;
+	margin-left:550px;
+}
+
+#page_sitemap span{
+	margin-left:480px;
+	font-size:20px;
+}
+
+.mainClass {
+	background-color:#eee;	
+	height:1000px;
+	width: 1220px;
+	margin-left: 50px;
+	margin-top:50px;
+}
+
+.homeText {
+	font-weight:bold;
+	fill:rgba(255, 0, 119, 0.808);
+	
+}
+
+.mainPages {
+	font-weight:bold;
+	fill:rgba(255, 0, 119, 0.808);
+}
+
+.subPages {
+	font-weight:bold;
+	fill:rgba(255, 0, 119, 0.808);
+
+}
+
+line {
+	stroke:rgba(255, 0, 119, 0.808);
+	stroke-width:4;
+}
+
+polyline {
+	stroke:rgba(255, 0, 119, 0.808);
+	stroke-width:4;
+}
+
+
+.homeRect {
+	fill:black;
+}
